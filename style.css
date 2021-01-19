@@ -1,0 +1,270 @@
+html {
+    position: relative;
+    min-height: 100%;
+}
+
+body {
+    height: 100%;
+}
+
+.container-fluid {
+    width: 100%;
+}
+
+.bgimg-1 {
+    position: absolute;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-image: url("ren-ran-unsplash.jpg");
+    height: 100%;
+    width: 100%;
+}
+
+.bgimg-2 {
+    position: absolute;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-image: url("josh-calabrese-unsplash-01.png");
+    height: 100%;
+    width: 100%;
+}
+
+.footerMenu {
+  position: absolute;
+  width: 100%;
+  height: 100px;
+  background-color: #1F3B2C;
+}
+
+.footerMenu > .container {
+    position: absolute;
+    top: 50%;
+    -ms-transform: translateY(-50%);
+    transform: translateY(-50%);
+}
+
+.footerMenu > .container > p {
+    color: white;
+    margin-top: 3px;
+    margin-bottom: 3px;
+}
+
+nav {
+    background-color: white;
+}
+
+.carouselContainer {
+    margin: 0 auto;
+    margin-top: 50px;
+    background-color: #588068;
+/*    height: 80%;*/
+    width: 80%;
+    padding: 20px 20px 20px 20px;
+}
+
+.carouselContainer > h1 {
+    font-weight: 500;
+    color: white;
+}
+
+.carouselContainer > h3 {
+    font-weight: 500;
+    color: white;
+}
+
+.carouselContainer > h5 {
+    font-weight: 400;
+    color: white;
+}
+
+.carousel-inner {
+  margin: auto;
+}
+
+.carousel-item {
+    height: 100%
+    width: 100%;
+    margin: auto;
+}
+
+.btn-primary {
+    background-color: #E5B0A4;
+    color: white;
+    border: none;
+}
+
+.btn-primary:hover {
+    background-color: #C08D81;
+    color: white;
+}
+
+.btn-primary:active:focus {
+    background-color: #588068 !important;
+}
+
+.homeImage {
+    height: 100vh;
+}
+
+.homeText {
+    padding-top: 80px;
+    padding-left: 30px;
+}
+
+.quizBox {
+    margin-top: 30px;
+    margin-bottom: 30px;
+    padding: 30px 30px 30px 30px;
+    width: 60%;
+}
+
+.quizOption {
+    margin: 10px 10px;
+}
+
+.quizNav {
+    color: transparent;
+}
+
+.pagination > .active > a
+{
+    color: white;
+    background-color: #588068 !Important;
+    border: solid 1px #588068 !Important;
+}
+
+.jungleRoomPlantCard {
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+
+.pageContent {
+    height: 100vh;
+    background: transparent url('josh-calabrese-unsplash-01.png');
+    background-repeat: no-repeat;
+    background-position: bottom right;
+    background-size: 550px 730px;
+}
+
+
+.homeTextRow {
+    margin-top: 20px;
+}
+
+.footerLink {
+    text-decoration: underline;
+    color: white;
+}
+
+.loginForm {
+    padding-top: 80px;
+}
+
+.detailIcon {
+    padding-right: 8px;
+}
+
+.buttonLink {
+    color: white;
+}
+
+.buttonLink:hover {
+    color: white;
+    text-decoration: none;
+}
+
+.clearfix::after,
+.calendar ol::after {
+  content: ".";
+  display: block;
+  height: 0;
+  clear: both;
+  visibility: hidden;
+}
+
+.bg-success {
+    color: #588068;
+}
+
+.carouselLine {
+    height: 2px;
+    width: 180px;
+    color: white;
+}
+
+/* ================ Calendar Styling */
+/* === Source: https://jsfiddle.net/bootstrapious/0omayhc4 */
+.calendar {
+  border-radius: 10px;
+}
+
+.month {
+  font-size: 2rem;
+}
+
+@media (min-width: 992px) {
+  .month {
+    font-size: 3.5rem;
+  }
+}
+
+.calendar ol li {
+  float: left;
+  width: 14.28571%;
+}
+
+.calendar .day-names {
+  border-bottom: 1px solid #eee;
+}
+
+.calendar .day-names li {
+  text-transform: uppercase;
+  margin-bottom: 0.5rem;
+}
+
+.calendar .days li {
+  border-bottom: 1px solid #eee;
+  min-height: 8rem;
+}
+
+.calendar .days li .date {
+  margin: 0.5rem 0;
+}
+
+.calendar .days li .event {
+  font-size: 0.75rem;
+  padding: 0.4rem;
+  color: white;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  border-radius: 4rem;
+  margin-bottom: 1px;
+}
+
+.calendar .days li .event.span-2 {
+  width: 200%;
+}
+
+.calendar .days li .event.begin {
+  border-radius: 1rem 0 0 1rem;
+}
+
+.calendar .days li .event.end {
+  border-radius: 0 1rem 1rem 0;
+}
+
+.calendar .days li .event.clear {
+  background: none;
+}
+
+.calendar .days li:nth-child(n+29) {
+  border-bottom: none;
+}
+
+.calendar .days li.outside .date {
+  color: #ddd;
+}
